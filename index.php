@@ -5,7 +5,7 @@ ini_set( "display_errors", 1 );
 $title = "Adam time";
 
 #$time = new DateTime('2011-11-17 00:00');
-#$time->add(new DateInterval('PT' . $interval_in_minutes . 'M'));
+#$time➳add(new DateInterval('PT' . $interval_in_minutes . 'M'));
 
 $date_time_obj = new DateTime("now",new DateTimeZone('UTC'));
 $hour= $date_time_obj->format('H');
@@ -121,7 +121,7 @@ $page = "
 </head>
 <body>
 <h1 style='font-size: 200px; text-align:center'>$timeSymbol</h1>
-<p style='font-size: 70px;'>🧠 ->🦋 ->🌷 ->🌲 ->🌵 ->🍞 ->🥫 ->⚓ ->⏳ ->🥐 ->⭐ ->☁️ ->☂️ ->🪁 ->👓 ->🎈</p>
+<p style='font-size: 40px; text-align:center'>🧠 ➳🦋 ➳🌷 ➳🌲 ➳🌵 ➳🍞 ➳🥫 ➳⚓ ➳⏳ ➳🥐 ➳⭐ ➳☁️ ➳☂️ ➳🪁 ➳👓 ➳🎈</p>
 </body>
 </html>";
 echo $page;
