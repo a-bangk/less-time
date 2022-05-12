@@ -2,10 +2,7 @@
 error_reporting( E_ALL );
 ini_set( "display_errors", 1 );
 
-$title = "Adam time";
-
-#$time = new DateTime('2011-11-17 00:00');
-#$time➳add(new DateInterval('PT' . $interval_in_minutes . 'M'));
+$title = "Adam-Time";
 
 $date_time_obj = new DateTime("now",new DateTimeZone('UTC'));
 $hour= $date_time_obj->format('H');
@@ -100,7 +97,7 @@ switch ($time_in_minutes){
         $timeSymbol="👓初"; break;
     case $time_in_minutes >= 1290 and $time_in_minutes<1319:
         $timeSymbol="👓中"; break;
-    case $time_in_minutes >= 1320 and $time_in_minutes<1259:
+    case $time_in_minutes >= 1320 and $time_in_minutes<1359:
         $timeSymbol="👓終"; break;
     case $time_in_minutes >= 1360 and $time_in_minutes<1379:
         $timeSymbol="🎈初"; break;
