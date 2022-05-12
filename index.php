@@ -7,36 +7,111 @@ $title = "Adam time";
 #$time = new DateTime('2011-11-17 00:00');
 #$time->add(new DateInterval('PT' . $interval_in_minutes . 'M'));
 
+$date_time_obj = new DateTime("now",new DateTimeZone('UTC'));
+$hour= $date_time_obj->format('H');
+$minute = $date_time_obj->format('i');
+$time_in_minutes= $hour*60+$minute;
+switch ($time_in_minutes){
+    case $time_in_minutes >= 0 and $time_in_minutes<29:
+        $timeSymbol="🧠初"; break;
+    case $time_in_minutes >= 30 and $time_in_minutes<59:
+        $timeSymbol="🧠中"; break;
+    case $time_in_minutes >= 60 and $time_in_minutes<89:
+        $timeSymbol="🧠終"; break;
+    case $time_in_minutes >= 0 and $time_in_minutes<89:
+        $timeSymbol="🦋初"; break;
+    case $time_in_minutes >= 0 and $time_in_minutes<89:
+        $timeSymbol="🦋中"; break;
+    case $time_in_minutes >= 0 and $time_in_minutes<89:
+        $timeSymbol="🦋終"; break;
+    case $time_in_minutes >= 0 and $time_in_minutes<89:
+        $timeSymbol="🌷初"; break;
+    case $time_in_minutes >= 0 and $time_in_minutes<89:
+        $timeSymbol="🌷中"; break;
+    case $time_in_minutes >= 0 and $time_in_minutes<89:
+        $timeSymbol="🌷終"; break;
+    case $time_in_minutes >= 0 and $time_in_minutes<89:
+        $timeSymbol="🌲初"; break;
+    case $time_in_minutes >= 0 and $time_in_minutes<89:
+        $timeSymbol="🌲中"; break;
+    case $time_in_minutes >= 0 and $time_in_minutes<89:
+        $timeSymbol="🌲終"; break;
+    case $time_in_minutes >= 0 and $time_in_minutes<89:
+        $timeSymbol="🌵初"; break;
+    case $time_in_minutes >= 0 and $time_in_minutes<89:
+        $timeSymbol="🌵中"; break;
+    case $time_in_minutes >= 0 and $time_in_minutes<89:
+        $timeSymbol="🌵終"; break;
+    case $time_in_minutes >= 0 and $time_in_minutes<89:
+        $timeSymbol="🍞初"; break;
+    case $time_in_minutes >= 0 and $time_in_minutes<89:
+        $timeSymbol="🍞中"; break;
+    case $time_in_minutes >= 0 and $time_in_minutes<89:
+        $timeSymbol="🍞終"; break;
+    case $time_in_minutes >= 0 and $time_in_minutes<29:
+        $timeSymbol="🥫初"; break;
+    case $time_in_minutes >= 30 and $time_in_minutes<59:
+        $timeSymbol="🥫中"; break;
+    case $time_in_minutes >= 60 and $time_in_minutes<89:
+        $timeSymbol="🥫終"; break;
+    case $time_in_minutes >= 0 and $time_in_minutes<89:
+        $timeSymbol="⚓初"; break;
+    case $time_in_minutes >= 0 and $time_in_minutes<89:
+        $timeSymbol="⚓中"; break;
+    case $time_in_minutes >= 0 and $time_in_minutes<89:
+        $timeSymbol="⚓終"; break;
+    case $time_in_minutes >= 0 and $time_in_minutes<89:
+        $timeSymbol="⏳初"; break;
+    case $time_in_minutes >= 0 and $time_in_minutes<89:
+        $timeSymbol="⏳中"; break;
+    case $time_in_minutes >= 0 and $time_in_minutes<89:
+        $timeSymbol="⏳終"; break;
+    case $time_in_minutes >= 0 and $time_in_minutes<89:
+        $timeSymbol="🥐初"; break;
+    case $time_in_minutes >= 0 and $time_in_minutes<89:
+        $timeSymbol="🥐中"; break;
+    case $time_in_minutes >= 0 and $time_in_minutes<89:
+        $timeSymbol="🥐終"; break;
+    case $time_in_minutes >= 0 and $time_in_minutes<89:
+        $timeSymbol="⭐初"; break;
+    case $time_in_minutes >= 0 and $time_in_minutes<89:
+        $timeSymbol="⭐中"; break;
+    case $time_in_minutes >= 0 and $time_in_minutes<89:
+        $timeSymbol="⭐終"; break;
+    case $time_in_minutes >= 0 and $time_in_minutes<89:
+        $timeSymbol="☁️初"; break;
+    case $time_in_minutes >= 0 and $time_in_minutes<89:
+        $timeSymbol="☁️中"; break;
+    case $time_in_minutes >= 0 and $time_in_minutes<89:
+        $timeSymbol="☁️終"; break;
+    case $time_in_minutes >= 0 and $time_in_minutes<29:
+        $timeSymbol="☂️初"; break;
+    case $time_in_minutes >= 30 and $time_in_minutes<59:
+        $timeSymbol="☂️中"; break;
+    case $time_in_minutes >= 60 and $time_in_minutes<89:
+        $timeSymbol="☂️終"; break;
+    case $time_in_minutes >= 0 and $time_in_minutes<89:
+        $timeSymbol="🪁初"; break;
+     case $time_in_minutes >= 0 and $time_in_minutes<89:
+         $timeSymbol="🪁中"; break;
+    case $time_in_minutes >= 0 and $time_in_minutes<89:
+        $timeSymbol="🪁終"; break;
+    case $time_in_minutes >= 0 and $time_in_minutes<89:
+        $timeSymbol="👓初"; break;
+    case $time_in_minutes >= 0 and $time_in_minutes<89:
+        $timeSymbol="👓中"; break;
+    case $time_in_minutes >= 0 and $time_in_minutes<89:
+        $timeSymbol="👓終"; break;
+    case $time_in_minutes >= 0 and $time_in_minutes<89:
+        $timeSymbol="🎈初"; break;
+    case $time_in_minutes >= 0 and $time_in_minutes<89:
+        $timeSymbol="🎈中"; break;
+    case $time_in_minutes >= 0 and $time_in_minutes<89:
+        $timeSymbol="🎈終"; break;
+    
+}
 
-$timeSymbol="🧠初";
-/*
-swithc(TIME NOW())
-if isBetween(00:00, 01:29, now)
- $timeSymbol="🧠"
-case :
-$timeSymbol="🧠" 01:30->03:00
-$timeSymbol="🦋" 01:30->03:00
-$timeSymbol="🌷" 03:00->04:30
-$timeSymbol="🌲" 04:30->06:00
-$timeSymbol="🌵" 06:00->07:30
-$timeSymbol="🍞" 07:30->09:00
-$timeSymbol="🥫" 09:00->10:30
-$timeSymbol="⚓" 10:30->12:00
-$timeSymbol="⏳" 12:00->13:30
-$timeSymbol="🥐" 13:30->15:00
-$timeSymbol="⭐" 15:00->16:30
-$timeSymbol="☁️" 16:30->18:00
-$timeSymbol="☂️" 18:00->19:30
-$timeSymbol="🪁" 19:30->21:00
-$timeSymbol="👓" 21:00->22:30
-$timeSymbol="🎈" 22:30->00:00
 
-
-$sunset = "6:26 pm";
-$date1 = DateTime::createFromFormat('h:i a', $current_time);
-$date2 = DateTime::createFromFormat('h:i a', $sunrise);
-$date3 = DateTime::createFromFormat('h:i a', $sunset);
-*/
 $page = "
 <!DOCTYPE html>
 <html>
@@ -47,6 +122,7 @@ $page = "
 </head>
 <body>
 <h1 style='font-size: 200px; text-align:center'>$timeSymbol</h1>
+<p style='font-size: 70px;'>🧠 ->🦋 ->🌷 ->🌲 ->🌵 ->🍞 ->🥫 ->⚓ ->⏳ ->🥐 ->⭐ ->☁️ ->☂️ ->🪁 ->👓 ->🎈</p>
 </body>
 </html>";
 echo $page;
