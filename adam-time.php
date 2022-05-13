@@ -51,7 +51,7 @@ switch ($time_in_minutes){
         $timeSymbol="🥫中"; break;
     case $time_in_minutes >= 600 and $time_in_minutes<629:
         $timeSymbol="🥫終"; break;
-    case $time_in_minutes >= 630 and $time_in_minutes<656:
+    case $time_in_minutes >= 630 and $time_in_minutes<659:
         $timeSymbol="⚓初"; break;
     case $time_in_minutes >= 660 and $time_in_minutes<689:
         $timeSymbol="⚓中"; break;
