@@ -1,20 +1,23 @@
 
 document.addEventListener("DOMContentLoaded", function () {
     let currentAdamTime = setCurrentAdamTime()
-    setHtmlIdContent("currentAdamTime",'',currentAdamTime)
-    setHtmlIdContent("currentAdamTimeTitle",'',currentAdamTime)
-    setHtmlIdContent("indexTitle"," Start of Adam Time",currentAdamTime)
+    setHtmlIdContent("currentAdamTime", '', currentAdamTime)
+    setHtmlIdContent("currentAdamTimeTitle", '', currentAdamTime)
+    setHtmlIdContent("indexTitle", " Start of Adam Time", currentAdamTime)
     setHtmlIdContent("aboutTitle", " About Adam Time", currentAdamTime)
-    setInterval(function () {
-        setHtmlIdContent("currentAdamTime",currentAdamTime);
-        setHtmlIdContent("currentAdamTimeTitle",currentAdamTime)
-        setHtmlIdContent("indextTitle"," Start of Adam Time",currentAdamTime);
-        setHtmlIdContent("aboutTitle", " About Adam Time", currentAdamTime);
-    }, 5 * 60 * 1000);    
+    setInterval(updateValues,60 * 1000);
 });
 
-function setHtmlIdContent (id,text,content){
-    document.getElementById(id).innerHTML = content+text
+function updateValues() {
+    let currentAdamTime = setCurrentAdamTime()
+    setHtmlIdContent("currentAdamTime", currentAdamTime);
+    setHtmlIdContent("currentAdamTimeTitle", currentAdamTime)
+    setHtmlIdContent("indextTitle", " Start of Adam Time", currentAdamTime);
+    setHtmlIdContent("aboutTitle", " About Adam Time", currentAdamTime);
+}
+
+function setHtmlIdContent(id, text, content) {
+    document.getElementById(id).innerHTML = content + text
 }
 
 function getMinutesSinceMidnight(d = new Date()) {
