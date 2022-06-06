@@ -1,23 +1,15 @@
 
-document.addEventListener("DOMContentLoaded", function () {
-    let currentAdamTime = setCurrentAdamTime()
-    setHtmlIdContent("currentAdamTime", '', currentAdamTime)
-    setHtmlIdContent("currentAdamTimeTitle", '', currentAdamTime)
-    setHtmlIdContent("indexTitle", " Start of Adam Time", currentAdamTime)
-    setHtmlIdContent("aboutTitle", " About Adam Time", currentAdamTime)
-    setInterval(updateValues,60 * 1000);
-});
+document.addEventListener("DOMContentLoaded",  startAdamTime());
+
+function startAdamTime() {
+    updateValues()
+    setInterval(updateValues, 60 * 1000)
+}
 
 function updateValues() {
     let currentAdamTime = setCurrentAdamTime()
-    setHtmlIdContent("currentAdamTime", currentAdamTime);
-    setHtmlIdContent("currentAdamTimeTitle", currentAdamTime)
-    setHtmlIdContent("indextTitle", " Start of Adam Time", currentAdamTime);
-    setHtmlIdContent("aboutTitle", " About Adam Time", currentAdamTime);
-}
-
-function setHtmlIdContent(id, text, content) {
-    document.getElementById(id).innerHTML = content + text
+    document.getElementById("currentAdamTime").innerHTML = currentAdamTime
+    document.getElementById("currentAdamTimeTitle").innerHTML = currentAdamTime
 }
 
 function getMinutesSinceMidnight(d = new Date()) {
@@ -86,11 +78,11 @@ function setCurrentAdamTime() {
         case timeInMinutes >= 780 && timeInMinutes < 809:
             timeSymbol = "🦚三"; break;
         case timeInMinutes >= 810 && timeInMinutes < 839:
-            timeSymbol = "❤一"; break;
+            timeSymbol = "🤖一"; break;
         case timeInMinutes >= 840 && timeInMinutes < 869:
-            timeSymbol = "❤二"; break;
+            timeSymbol = "🤖二"; break;
         case timeInMinutes >= 870 && timeInMinutes < 899:
-            timeSymbol = "❤三"; break;
+            timeSymbol = "🤖三"; break;
         case timeInMinutes >= 900 && timeInMinutes < 929:
             timeSymbol = "⭐一"; break;
         case timeInMinutes >= 930 && timeInMinutes < 959:
@@ -127,7 +119,7 @@ function setCurrentAdamTime() {
             timeSymbol = "🫧二"; break;
         case timeInMinutes >= 1410 && timeInMinutes < 1440:
             timeSymbol = "🫧三"; break;
-        default: timeSymbol = "ERROR";
+        default: timeSymbol = "A-T";
     }
     return timeSymbol
 }
