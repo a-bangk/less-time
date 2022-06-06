@@ -151,13 +151,13 @@ function setCurrentAdamTime() {
         timeSymbol = "三🪁"
     }
     else if (timeInMinutes < 1289) {
-        timeSymbol = "一🥫"
+        timeSymbol = "一🪑"
     }
     else if (timeInMinutes < 1319) {
-        timeSymbol = "二🥫"
+        timeSymbol = "二🪑"
     }
     else if (timeInMinutes < 1359) {
-        timeSymbol = "三🥫"
+        timeSymbol = "三🪑"
     }
     else if (timeInMinutes < 1379) {
         timeSymbol = "一🫧"
