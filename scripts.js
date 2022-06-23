@@ -27,148 +27,148 @@ function getMinutesSinceUtcMidnight(currentEpochTime = new Date().getTime()) {
 function setCurrentAdamTime() {
     timeInMinutes = getMinutesSinceUtcMidnight()
 
-    if (timeInMinutes < 29) {
+    if (timeInMinutes <= 29) {
         timeSymbol = "一🥐"
     }
-    else if (timeInMinutes < 59) {
+    else if (timeInMinutes <= 59) {
         timeSymbol = "二🥐"
     }
-    else if (timeInMinutes < 89) {
+    else if (timeInMinutes <= 89) {
         timeSymbol = "三🥐"
     }
-    else if (timeInMinutes < 119) {
+    else if (timeInMinutes <= 119) {
         timeSymbol = "一🦋"
     }
-    else if (timeInMinutes < 149) {
+    else if (timeInMinutes <= 149) {
         timeSymbol = "二🦋"
     }
-    else if (timeInMinutes < 179) {
+    else if (timeInMinutes <= 179) {
         timeSymbol = "三🦋"
     }
-    else if (timeInMinutes < 209) {
+    else if (timeInMinutes <= 209) {
         timeSymbol = "一🌷"
     }
-    else if (timeInMinutes < 239) {
+    else if (timeInMinutes <= 239) {
         timeSymbol = "二🌷"
     }
-    else if (timeInMinutes < 269) {
+    else if (timeInMinutes <= 269) {
         timeSymbol = "三🌷"
     }
-    else if (timeInMinutes < 299) {
+    else if (timeInMinutes <= 299) {
         timeSymbol = "一☂️"
     }
-    else if (timeInMinutes < 329) {
+    else if (timeInMinutes <= 329) {
         timeSymbol = "二☂️"
     }
-    else if (timeInMinutes < 359) {
+    else if (timeInMinutes <= 359) {
         timeSymbol = "三☂️"
     }
-    else if (timeInMinutes < 389) {
+    else if (timeInMinutes <= 389) {
         timeSymbol = "一🌵"
     }
-    else if (timeInMinutes < 419) {
+    else if (timeInMinutes <= 419) {
         timeSymbol = "二🌵"
     }
-    else if (timeInMinutes < 449) {
+    else if (timeInMinutes <= 449) {
         timeSymbol = "三🌵"
     }
-    else if (timeInMinutes < 479) {
+    else if (timeInMinutes <= 479) {
         timeSymbol = "一🎈"
     }
-    else if (timeInMinutes < 509) {
+    else if (timeInMinutes <= 509) {
         timeSymbol = "二🎈"
     }
-    else if (timeInMinutes < 539) {
+    else if (timeInMinutes <= 539) {
         timeSymbol = "三🎈"
     }
-    else if (timeInMinutes < 569) {
+    else if (timeInMinutes <= 569) {
         timeSymbol = "一👓"
     }
-    else if (timeInMinutes < 599) {
+    else if (timeInMinutes <= 599) {
         timeSymbol = "二👓"
     }
-    else if (timeInMinutes < 629) {
+    else if (timeInMinutes <= 629) {
         timeSymbol = "三👓"
     }
-    else if (timeInMinutes < 659) {
+    else if (timeInMinutes <= 659) {
         timeSymbol = "一⚓"
     }
-    else if (timeInMinutes < 689) {
+    else if (timeInMinutes <= 689) {
         timeSymbol = "二⚓"
     }
-    else if (timeInMinutes < 719) {
+    else if (timeInMinutes <= 719) {
         timeSymbol = "三⚓"
     }
-    else if (timeInMinutes < 749) {
+    else if (timeInMinutes <= 749) {
         timeSymbol = "一🦚"
     }
-    else if (timeInMinutes < 779) {
+    else if (timeInMinutes <= 779) {
         timeSymbol = "二🦚"
     }
-    else if (timeInMinutes < 809) {
+    else if (timeInMinutes <= 809) {
         timeSymbol = "三🦚"
     }
-    else if (timeInMinutes < 839) {
+    else if (timeInMinutes <= 839) {
         timeSymbol = "一🤖"
     }
-    else if (timeInMinutes < 869) {
+    else if (timeInMinutes <= 869) {
         timeSymbol = "二🤖"
     }
-    else if (timeInMinutes < 899) {
+    else if (timeInMinutes <= 899) {
         timeSymbol = "三🤖"
     }
-    else if (timeInMinutes < 929) {
+    else if (timeInMinutes <= 929) {
         timeSymbol = "一⭐"
     }
-    else if (timeInMinutes < 959) {
+    else if (timeInMinutes <= 959) {
         timeSymbol = "二⭐"
     }
-    else if (timeInMinutes < 989) {
+    else if (timeInMinutes <= 989) {
         timeSymbol = "三⭐"
     }
-    else if (timeInMinutes < 1019) {
+    else if (timeInMinutes <= 1019) {
         timeSymbol = "一☁️"
     }
-    else if (timeInMinutes < 1049) {
+    else if (timeInMinutes <= 1049) {
         timeSymbol = "二☁️"
     }
-    else if (timeInMinutes < 1079) {
+    else if (timeInMinutes <= 1079) {
         timeSymbol = "三☁️"
     }
-    else if (timeInMinutes < 1109) {
+    else if (timeInMinutes <= 1109) {
         timeSymbol = "一🌲"
     }
-    else if (timeInMinutes < 1139) {
+    else if (timeInMinutes <= 1139) {
         timeSymbol = "二🌲"
     }
-    else if (timeInMinutes < 1169) {
+    else if (timeInMinutes <= 1169) {
         timeSymbol = "三🌲"
     }
-    else if (timeInMinutes < 1199) {
+    else if (timeInMinutes <= 1199) {
         timeSymbol = "一🪁"
     }
-    else if (timeInMinutes < 1229) {
+    else if (timeInMinutes <= 1229) {
         timeSymbol = "二🪁"
     }
-    else if (timeInMinutes < 1259) {
+    else if (timeInMinutes <= 1259) {
         timeSymbol = "三🪁"
     }
-    else if (timeInMinutes < 1289) {
+    else if (timeInMinutes <= 1289) {
         timeSymbol = "一🪑"
     }
-    else if (timeInMinutes < 1319) {
+    else if (timeInMinutes <= 1319) {
         timeSymbol = "二🪑"
     }
-    else if (timeInMinutes < 1359) {
+    else if (timeInMinutes <= 1359) {
         timeSymbol = "三🪑"
     }
-    else if (timeInMinutes < 1379) {
+    else if (timeInMinutes <= 1379) {
         timeSymbol = "一♻"
     }
-    else if (timeInMinutes < 1409) {
+    else if (timeInMinutes <= 1409) {
         timeSymbol = "二♻"
     }
-    else if (timeInMinutes < 1440) {
+    else if (timeInMinutes <= 1440) {
         timeSymbol = "三♻"
     }
     else { timeSymbol = "A-T"; }
