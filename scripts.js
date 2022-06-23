@@ -1,6 +1,9 @@
 
 document.addEventListener("DOMContentLoaded", startAdamTime());
 
+function darkModeBool(){
+}
+
 function startAdamTime() {
     updateValues()
     //TODO do some logic so it only runs every 30 minutes
