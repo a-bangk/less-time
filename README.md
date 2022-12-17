@@ -1,5 +1,5 @@
-# Adam-Time
-A simple site that always shows the current Adam-Time
+# Stress-less Time
+A simple site that always shows the current Stress-less Time
 
 To push new build to azure:
 ´´´git push  main´´´

@@ -1,19 +1,19 @@
 
-document.addEventListener("DOMContentLoaded", startAdamTime());
+document.addEventListener("DOMContentLoaded", startTime());
 
 function darkModeBool(){
 }
 
-function startAdamTime() {
+function startTime() {
     updateValues()
     //TODO do some logic so it only runs every 30 minutes
     setInterval(updateValues, 60 * 1000)
 }
 
 function updateValues() {
-    let currentAdamTime = setCurrentAdamTime()
-    document.getElementById("currentAdamTime").innerHTML = currentAdamTime
-    document.getElementById("currentAdamTimeTitle").innerHTML = currentAdamTime
+    let currentTime = setCurrentTime()
+    document.getElementById("currentTime").innerHTML = currentTime
+    document.getElementById("currentTimeTitle").innerHTML = currentTime
 }
 
 function getMinutesSinceUtcMidnight(currentEpochTime = new Date().getTime()) {
@@ -24,7 +24,7 @@ function getMinutesSinceUtcMidnight(currentEpochTime = new Date().getTime()) {
     return minutes
 }
 
-function setCurrentAdamTime() {
+function setCurrentTime() {
     timeInMinutes = getMinutesSinceUtcMidnight()
 
     if (timeInMinutes <= 29) {
