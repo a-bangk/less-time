@@ -12,7 +12,7 @@ To push new build to azure:
 ## Release Log
 
 ### 2023-05-11
-Renamed to Less-Time
+Renamed to Less-time
 
 ### 2022-12-17
 Renamed to Stress-less Time.
